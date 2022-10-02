@@ -1,0 +1,93 @@
+<!DOCtype html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="styles.css"> 
+  <title>Spotify Feedback Survey</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <header>
+    <h1 id="title">Spotify Feedback Survey</h1>
+    <p id="description"> Thank you for using our service, help us improve our servic by answering some questions.</p>
+    </header>
+
+    <!-- survey form -->
+    <form id="survey-form">
+      <div class="div">
+      <label for="name" id="name-label">Name
+      </label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="div">
+      <label for="email" id="email-label">Email
+      </label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="div">
+      <label for="number" id="number-label">Age
+      </label>
+      <input id="number" type="number" min="13" max="120" placeholder="Age">
+      </div>
+
+
+      <!-- radio buttons -->
+      <div class="div">
+        <p>Would you recommend Spotify to a friend?</p>
+        <label for="yes">
+          <input class="input-radio" id="yes" type="radio" value="yes" name="yes/no">
+           Yes</label>
+        <label for="no">
+          <input class="input-radio" id="no" type="radio" value="no" name="yes/no">
+           No</label>
+        <label for="not-sure">
+          <input class="input-radio"  id="not-sure" type="radio" value="not-sure" name="yes/no">
+           Not sure</label>
+        </div>
+
+        <!-- dropdown -->
+        <div class="div">
+      <label for="dropdown">How often do you use Spotify?
+        <select id="dropdown">
+          <option value="">Choose your answer</option>
+          <option value="daily">daily</option>
+          <option value="weekly">weekly</option>
+          <option value="monthly">monthly</option>
+        </select>
+      </label>
+      </div>
+
+      <!-- checkbox -->
+      <div class=" div">
+      <p>What's your favorite feature?</p>
+        <label for="no-ads">
+          <input class="input-checkbox" id="no-ads" type="checkbox" value="Play-music-with-no-ads">
+           Play music with no ads</label>
+        <label for="offline">
+          <input class="input-checkbox" id="offline" type="checkbox" value="Play-music-offline">
+           Play music offline</label>
+        <label for="multiple-devices">
+          <input class="input-checkbox" id="multiple-devices" type="checkbox" value="Play-music-on-multiple-devices">
+           Play music on multiple devices</label>
+        <label for="status">
+          <input class="input-checkbox" id="status" type="checkbox" value="Broadcast-status-with-other-apps"> Broadcast status with other apps</label>
+        <label for="lyrics">
+          <input class="input-checkbox" id="lyrics" type="checkbox" value="Read-lyrics">
+           Read lyrics</label>
+      </div>
+
+      <!-- textarea -->
+      <div class="div">
+      <p>Feature you would like to see  in the future?</p>
+        <textarea placeholder="I would like to see..." rows="10" cols="60"></textarea>
+        <input type="submit" id="submit" value="Submit">
+      </div>
+    </form>
+
+
+    </div>
+  </body>
+</html>
